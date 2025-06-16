@@ -13,7 +13,7 @@ from mcp.server.fastmcp import FastMCP
 # Initialize the FastMCP server
 mcp = FastMCP("pr-agent")
 
-# PR template directory (shared across all modules)
+# PR template directory (shared across all modules) **reusing 
 TEMPLATES_DIR = Path(__file__).parent.parent.parent / "templates"
 TYPE_MAPPING = {
     "bug": "bug.md",
