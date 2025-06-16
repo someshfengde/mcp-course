@@ -67,7 +67,7 @@ class TestAnalyzeFileChanges:
             if is_implemented:
                 # Check for some expected fields (flexible to allow different implementations)
                 assert any(key in data for key in ["files_changed", "files", "changes", "diff"]), \
-                    "Result should include file change information"
+                    f"Result should include file change information {data}"
             else:
                 # Starter code - just verify it returns something structured
                 assert isinstance(data, dict), "Should return a JSON object even if not implemented"
